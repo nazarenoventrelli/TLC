@@ -1,5 +1,3 @@
-###**Live Demo:**### http://tlc-ui.s3-website-us-east-1.amazonaws.com/
-
 
 ## TLC-App Structure Explanation ##
 
@@ -14,9 +12,13 @@ For achieve this i created two main lambdas
 
 **Tlc-query-handler:**  The query handler uses Athena for query the data processed previously and is exposed using an Api Gateway.
 
-
 The rest of the components are:
 
 **a Simple UI:** Based on angular, since Athena returns raw jsons is possible just present it using an anguular-material-table. The site is stored in an S3 Bucket and exposed using CloudFront.
 
 **CloudWatch Logs:**  Enabled for logs insights and monitoring.
+
+
+
+## Live Demo: http://tlc-ui.s3-website-us-east-1.amazonaws.com/
+![image](https://github.com/nazarenoventrelli/TLC/assets/40725187/f2cea256-2105-4028-828c-9a15e997b9a9)
