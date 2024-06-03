@@ -14,7 +14,7 @@ For achieve this i created two main lambdas
 
 The rest of the components are:
 
-**a Simple UI:** Based on angular, since Athena returns raw jsons is possible just present it using an anguular-material-table. The site is stored in an S3 Bucket and exposed using CloudFront.
+**a Simple UI:** Based on angular, since Athena returns raw jsons is possible just present it using an angular-material-table. The site is stored in an S3 Bucket and exposed using CloudFront.
 
 **CloudWatch Logs:**  Enabled for logs insights and monitoring.
 
