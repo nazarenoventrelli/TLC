@@ -1,0 +1,20 @@
+// Define tus propios colores
+$primary-color: red ; // Asegúrate de que esto está definido con un color válido
+$primary-color-light: lighten($primary-color, 15%);
+
+$primary-color: color("red", "lighten-1");
+$primary-color-light: false !important;
+$primary-color-dark: false !important;
+
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+
+$secondary-color: color("cyan", "lighten-1") !important;
+$success-color: color("green", "base") !important;
+$error-color: color("red", "base") !important;
+$link-color: color("green", "darken-1") !important;

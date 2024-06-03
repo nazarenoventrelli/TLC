@@ -1,0 +1,39 @@
+/* Estilo base para que el contenedor principal cubra toda la pantalla */
+html, body, .container {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.left-side {
+  flex: 0 0 30%;
+  border-right: 2px solid #000; /* Línea divisora */
+  height: 100%; /* Asegura que el contenedor izquierdo tenga la altura completa */
+}
+
+.right-side {
+  flex: 0 0 70%;
+  height: 100%; /* Asegura que el contenedor derecho tenga la altura completa */
+}
+
+.centered-card {
+  width: 80%;
+  position: relative;
+}
+
+mat-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+  color: #fff; 
+}
+body { margin: 0; font-family:Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";

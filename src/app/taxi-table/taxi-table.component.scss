@@ -1,0 +1,17 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mat-table {
+    width: 60%;
+    max-width: 100%;
+    overflow: auto;
+  }
+  

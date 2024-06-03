@@ -1,0 +1,68 @@
+
+
+@use '@angular/material' as mat;
+
+     
+
+@include mat.core();
+
+html, body {
+    height: 100%;
+    background-color: #fff;
+  
+}
+
+
+body { margin: 0;
+     font-family:Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif }
+
+$md-mcgpalette0: (
+    50 : #e0f7f4,
+    100 : #b3ece4,
+    200 : #80dfd2,
+    300 : #4dd2c0,
+    400 : #26c9b3,
+    500 : #00bfa5,
+    600 : #00b99d,
+    700 : #00b193,
+    800 : #00a98a,
+    900 : #009b79,
+    A100 : #c6fff0,
+    A200 : #93ffe3,
+    A400 : #60ffd6,
+    A700 : #47ffcf,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+// Create a theme using the palette
+$my-primary-theme: mat.define-palette($md-mcgpalette0);
+
+// Define secondary and warning colors if desired
+$my-accent-theme: mat.define-palette(mat.$indigo-palette);
+$my-warn-theme: mat.define-palette(mat.$red-palette);
+
+// Create the theme
+$my-theme: mat.define-light-theme((
+    color: (
+        primary: $my-primary-theme,
+        accent: $my-accent-theme,
+        warn: $my-warn-theme,
+    )
+));
+
+// Include all component styles for this theme
+@include mat.all-component-themes($my-theme);
